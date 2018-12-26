@@ -15,11 +15,7 @@ elif [ "$#" -gt "2" ]; then
 fi
 
 path="$PATHD/*$EXT"
-ls $path | wc -l
-#echo `ls "$path" | wc -l`
-#count=$`ls $path | wc -l`
-#echo $count
- 
+ls $path | wc -l 
 exit 0
 	
 
