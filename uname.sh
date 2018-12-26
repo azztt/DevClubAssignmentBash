@@ -1,7 +1,7 @@
 #!/bin/sh
 
-file=$2
-uname=$1
+file=$1
+uname=$2
 IFS=":"
 
 if [ $# -eq 0 ]; then
@@ -9,7 +9,7 @@ if [ $# -eq 0 ]; then
 	echo "USE: ./uname.sh username file"
 	exit 1
 elif [ $# -eq 1 ]; then
-	echo "Too few arguments! file missing"
+	echo "Too few arguments! username missing"
 	echo "USE: ./uname.sh username file"
 	exit 1
 fi
