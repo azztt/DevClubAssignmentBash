@@ -12,6 +12,9 @@ elif [ $# -eq 1 ]; then
 	echo "Too few arguments! username missing"
 	echo "USE: ./uname.sh username file"
 	exit 1
+elif [ $# -gt 2 ]; then
+	echo "Too many arguments!"
+	echo "USE: ./uname.sh username file"
 fi
 
 if [ -f "$file" ]; then
